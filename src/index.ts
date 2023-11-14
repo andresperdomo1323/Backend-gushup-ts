@@ -17,7 +17,7 @@ app.post('/enviar-mensaje', async (req: Request, res: Response) => {
     encodedParams.set('message', 'prueba');
     encodedParams.set('channel', 'whatsapp');
     encodedParams.set('source', '573154288560');
-    encodedParams.set('destination', '573014558248');
+    encodedParams.set('destination', '573203120084');
 
     const options = {
       method: 'POST',
