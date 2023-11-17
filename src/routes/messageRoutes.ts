@@ -1,4 +1,3 @@
-// src/routes/messageRoutes.ts
 import express, { Router, Request, Response } from 'express';
 import axios, { AxiosError } from 'axios';
 // import messageModel
