@@ -9,7 +9,7 @@ interface ContactDocument extends Contact, Document {}
 
 const contactSchema = new Schema<ContactDocument>({
   user: { type: String, index: true },
-  phoneNumber: String,
+  phoneNumber: { type: String, unique: true },
 });
 
 const ContactModel = mongoose.model<ContactDocument>('campaing', contactSchema);
