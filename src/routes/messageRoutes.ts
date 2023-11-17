@@ -128,7 +128,7 @@ router.post('/enviar-mensaje', async (req: Request, res: Response) => {
     encodedParams.set('message', JSON.stringify(messageData));
     encodedParams.set('channel', 'whatsapp');
     encodedParams.set('source', '573154288560');
-    encodedParams.set('destination', '573166346597');
+    encodedParams.set('destination', '573203120084');
 
     const options = {
       method: 'POST',

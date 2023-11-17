@@ -10,6 +10,12 @@ router.post('/enviar-campana', async (req: Request, res: Response) => {
     const textMessage: TextMessage = {
       type: 'text',
       text: '¡Hola! Este es un mensaje de la campaña.',
+      image: {
+        type: '',
+        originalUrl: '',
+        previewUrl: '',
+        caption: ''
+      }
     };
 
     const phoneNumbers: string[] = await getContactsFromDatabase();

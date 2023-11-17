@@ -12,7 +12,7 @@ const contactSchema = new Schema<ContactDocument>({
   phoneNumber: String,
 });
 
-const ContactModel = mongoose.model<ContactDocument>('users', contactSchema);
+const ContactModel = mongoose.model<ContactDocument>('campaing', contactSchema);
 
 const getContactsFromDatabase = async (): Promise<string[]> => {
   try {
